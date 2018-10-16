@@ -16,11 +16,11 @@ public class Test {
             int wybor = odczyt.nextInt();
             switch(wybor){
                 case 1:
-                    int a,b;
+                    double a,b;
                     System.out.print("Podaj a: ");
-                    a = odczyt.nextInt();
+                    a = odczyt.nextDouble();
                     System.out.print("Podaj b: ");
-                    b = odczyt.nextInt();
+                    b = odczyt.nextDouble();
                     Prostokat p = new Prostokat(a,b);
                     figury.add(p);
                     break;
