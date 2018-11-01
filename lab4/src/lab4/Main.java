@@ -5,6 +5,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] argv){
+//        String word = "Ala ma kota kot ma Ale";
+//        ROT11 rot = new ROT11();
+//        Polibiusz pol = new Polibiusz();
+//
+//        String cryptedrot = rot.crypt(word);
+//        String cryptedpol = pol.crypt(word);
+//
+//        System.out.println(cryptedrot);
+//        System.out.println(rot.decrypt(cryptedrot));
+//        System.out.println(cryptedpol);
+//        System.out.println(pol.decrypt(cryptedpol));
+//
+
+
         File fileToOpen = new File(argv[0]);
         PrintWriter fileToWrite = null;
         try {

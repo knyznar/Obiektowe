@@ -24,7 +24,7 @@ public class ROT11 implements Algorithm{
                 }
             }
             else{
-                cryptedWord += charInAscii;
+                cryptedWord += (char)charInAscii;
             }
         }
         return cryptedWord;
