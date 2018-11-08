@@ -31,8 +31,8 @@ public class Subtitles {
             String line = sc.nextLine();
             Matcher matcher = compiledPattern.matcher(line);
             if (matcher.matches()) {
-                int first = (Integer.parseInt(matcher.group(1)) + (delay * 1000 / fps));
-                int second = (Integer.parseInt(matcher.group(2)) + (delay * 1000 / fps));
+                int first = (Integer.parseInt(matcher.group(1)) + (delay/1000 * fps));
+                int second = (Integer.parseInt(matcher.group(2)) + (delay/1000 * fps));
 
                 if(first > second) throw new FrameException();
                 else fileToWrite.println("{" + Integer.toString(first) + "}{" + Integer.toString(second)+"}" + matcher.group(3));
