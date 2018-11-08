@@ -31,8 +31,8 @@ public class Subtitles {
             String line = sc.nextLine();
             Matcher matcher = compiledPattern.matcher(line);
             if (matcher.matches()) {
-                int first = (Integer.parseInt(matcher.group(1)) + delay * 1000 / fps);
-                int second = (Integer.parseInt(matcher.group(2)) + delay * 1000 / fps);
+                int first = (Integer.parseInt(matcher.group(1)) + (delay * 1000 / fps));
+                int second = (Integer.parseInt(matcher.group(2)) + (delay * 1000 / fps));
 
                 if(first > second) throw new FrameException();
                 else fileToWrite.println("{" + Integer.toString(first) + "}{" + Integer.toString(second)+"}" + matcher.group(3));
@@ -43,34 +43,3 @@ public class Subtitles {
         fileToWrite.close();
     }
 }
-
-
-//        String s1= "";
-//        String s2="";
-//        String line;
-//
-//        while (sc.hasNextLine()) {
-//            Scanner l = new Scanner(sc.nextLine());
-//            line = l.nextLine();
-//            int firstOpenBracket = line.indexOf('{');
-//            int firstCloseBracket = line.indexOf('}');
-//            int secondOpenBracket = line.indexOf('{', firstOpenBracket+1);
-//            int secondCloseBracket = line.indexOf('}', firstCloseBracket+1);
-//            s1 = line.substring(firstOpenBracket+1, firstCloseBracket);
-//            s2 = line.substring(secondOpenBracket+1, secondCloseBracket);
-//
-//            System.out.println("s1 " + s1);
-//            System.out.println("s2 " + s2);
-//            s1 = String.valueOf(Integer.parseInt(s1) + delay/1000*fps);
-//            s2 = String.valueOf(Integer.parseInt(s2) + delay/1000*fps);
-//            System.out.println("ees1 " + s1);
-//            System.out.println("ees2 " + s2);
-//
-//            fileToWrite.println("{" + s1 +"}"+"{"+ s2 +"}"+ line.substring(secondCloseBracket+1));
-//            }
-//        fileToWrite.close();
-//
-//        }
-
-
-
