@@ -1,0 +1,36 @@
+{328}{527}/Na wysokości 600 kilometrów temperatura waha się|/między 126 a -100 stopniami Celsjusza.
+{544}{681}/Dźwięk się nie niesie.|/Nie ma ciśnienia ani tlenu.
+{755}{858}/Życie w kosmosie jest niemożliwe.
+{875}{949}GRAWITACJA
+{954}{1014}.:: GrupaHatak.pl ::.
+{1017}{1081}Tłumaczenie:|rarehare & józek
+{1539}{1674}/Proszę o potwierdzenie, że pierwsza i druga|/część obudowy dysku P1 zostały usunięte.
+{1690}{1846}/- DMA M-1, M-2, M-3 i M-4 zakończone.|/- Przyjąłem, Explorer.
+{1873}{1973}/Dr Stone, tu Houston.|/Lekarzy niepokoją odczyty EKG.
+{1992}{2088}/- Nic mi nie jest, Houston.|/- Lekarze sądzą inaczej, pani doktor.
+{2088}{2177}/- Odczuwa pani nudności?|/- Nie bardziej niż zwykle, Houston.
+{2179}{2215}/Diagnostyka pozytywna.
+{2235}{2306}/Połączenie z kartą komunikacyjną|/gotowe do obioru danych.
+{2340}{2414}/Jeśli to zadziała, kiedy wylądujemy,|/stawiam wszystkim kolejkę.
+{2438}{2474}/Umowa, pani doktor.
+{2474}{2539}/Tylko pamiętaj,|/że Houston preferuje margarity.
+{2589}{2681}/Uruchamiam kartę.|/Potwierdźcie połączenie.
+{2702}{2757}/Brak potwierdzenia.|/Nie odczytujemy żadnych danych.
+{2781}{2844}/Zaczekajcie, Houston,|/zrestartuję kartę.
+{2848}{2884}/Czekamy.
+{2896}{2985}/- Houston, mam złe przeczucia.|/- Wyjaśnij.
+{2992}{3040}/Opowiem wam historię.
+{3043}{3131}/W '96 roku,|/kiedy byłem tu od 42 dni,
+{3138}{3191}/zawsze nad Teksasem|/spoglądałem w dół wiedząc,
+{3191}{3282}/że pani Kowalski patrzy w niebo,|/myśląc o mnie.
+{3306}{3349}/Wysyłałem jej całusy|/przez sześć tygodni.
+{3354}{3453}/Kiedy wylądowaliśmy w Edwards, dowiedziałem się,|/że zwiała z jakimś prawnikiem.
+{3457}{3529}/- Spakowałem się i ruszyłem autem do...|/- Tijuany.
+{3529}{3577}/Już to opowiadałeś, Kowalski.
+{3582}{3668}/Z tego, co Houston pamięta,|/odjechała w GTO z '74.
+{3676}{3752}/Inżynierka prosi o poziom paliwa|/w prototypie jet packa.
+{3771}{3839}/Przez pięć godzin w przestrzeni|/zużyłem tylko 30%.
+{3860}{3898}/Przekażcie inzynierom wyrazy szacunku.
+{3898}{4006}/Poza drobną wadą przy zerowaniu osi wzdłużnej,|/ten jet pack to kawał dobrej roboty.
+{4050}{4090}/Inżynierka przekazuje podziękowania.
+{4090}{4157}/Przekażcie, że wciąż wolę|/swoją corvettę z '67.
