@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 public class GraphPanel extends JPanel {
@@ -16,7 +18,6 @@ public class GraphPanel extends JPanel {
     private JLabel lw0, lw1, lw2, lw3, lw4, lw5;
     private JLabel ldx;
     private JButton button;
-
 
     private ArrayList<Double> values;
 
@@ -53,6 +54,16 @@ public class GraphPanel extends JPanel {
         dx.setText("0.1");
         button = new JButton("Rysuj");
         button.addActionListener(new ButtonListener());
+
+        rangeFrom.addKeyListener(nonDigit());
+        rangeTo.addKeyListener(nonDigit());
+        w0.addKeyListener(nonDigit());
+        w1.addKeyListener(nonDigit());
+        w2.addKeyListener(nonDigit());
+        w3.addKeyListener(nonDigit());
+        w4.addKeyListener(nonDigit());
+        w5.addKeyListener(nonDigit());
+        dx.addKeyListener(nonDigit());
 
         layout = new Box(BoxLayout.Y_AXIS);
         layout.add(lrangeFrom);
@@ -107,11 +118,6 @@ public class GraphPanel extends JPanel {
                         int from_int = (int)Math.round(from);
                         int to_int = (int)Math.round(to);
                         int y_axis = width * Math.abs(from_int) / (to_int - from_int);
-//                        System.out.println(from_int);
-//                        System.out.println(width);
-//                        System.out.println(values.size());
-//                        System.out.println(width / values.size());
-//                        System.out.println(y_axis);
 
                         g.drawLine(y_axis,0,y_axis, height);
                     }
@@ -147,6 +153,17 @@ public class GraphPanel extends JPanel {
         add(layout);
     }
 
+    public KeyAdapter nonDigit(){
+        KeyAdapter keyAdapter = new KeyAdapter(){
+            public void keyTyped(KeyEvent e){
+                if (!Character.isDigit(e.getKeyChar()) && e.getKeyChar()!='-'&& e.getKeyChar()!='.'){
+                    e.consume();
+                }
+            }
+        };
+        return keyAdapter;
+    }
+
     public class ButtonListener implements ActionListener {
 
         @Override
@@ -156,7 +173,12 @@ public class GraphPanel extends JPanel {
             double delta;
             from = Double.parseDouble(rangeFrom.getText());
             to = Double.parseDouble(rangeTo.getText());
-            W0 = Double.parseDouble(w0.getText());
+
+            if(Character.isDigit(w0.getText().charAt(0))) {
+                W0 = Double.parseDouble(w0.getText());
+            }else{
+                W0=0;
+            }
             W1 = Double.parseDouble(w1.getText());
             W2 = Double.parseDouble(w2.getText());
             W3 = Double.parseDouble(w3.getText());
