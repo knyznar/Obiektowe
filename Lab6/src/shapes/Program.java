@@ -22,6 +22,7 @@ public class Program extends JFrame {
         panel.shapelist.add(new Kwadrat("kwadrat1",10, 80, 40));
         panel.shapelist.add(new Prostokat("prostokat1",70,80, 40, 20));
         panel.shapelist.add(new Kolo("kolo1",70,130, 40));
+        panel.shapelist.add(new Trojkat("trojkat", 150, 70, 50, 60));
 
         Program program = new Program(panel);
     }
