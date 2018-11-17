@@ -188,9 +188,7 @@ public class GraphPanel extends JPanel {
             values = new ArrayList<>();
             for(double x=from; x <= to; x += delta){
                 values.add(W5*Math.pow(x,5)+W4*Math.pow(x,4)+W3*Math.pow(x,3)+W2*Math.pow(x,2)+W1*x+W0);
-                System.out.println("x=" + x + " f(x)=" + values.get(values.size()-1));
             }
-            System.out.println("values size =" + values.size());
             repaint();
         }
     }
