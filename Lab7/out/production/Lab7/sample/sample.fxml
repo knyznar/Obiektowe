@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="98.0" layoutY="201.0" text="Start:" />
+      <Label layoutX="104.0" layoutY="256.0" text="End:" />
+      <Label layoutX="68.0" layoutY="309.0" text="Frequency:" />
+      <LineChart fx:id="lineChart" layoutX="279.0" layoutY="109.0" prefHeight="407.0" prefWidth="522.0" title="Wielomian">
+        <xAxis>
+          <NumberAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="drawButton" layoutX="133.0" layoutY="402.0" mnemonicParsing="false" onAction="#draw" prefHeight="37.0" prefWidth="73.0" text="Draw" />
+      <TextField fx:id="rangeFromTxtField" layoutX="150.0" layoutY="196.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="rangeToTxtField" layoutX="150.0" layoutY="251.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="Dx" layoutX="150.0" layoutY="304.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="polynomial" layoutX="158.0" layoutY="46.0" prefHeight="26.0" prefWidth="317.0" />
+      <Label layoutX="68.0" layoutY="51.0" text="Wielomian:" />
+   </children>
+</Pane>
