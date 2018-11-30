@@ -45,7 +45,4 @@ public class Book {
         return year;
     }
 
-    public String getAll(){
-        return("isbn: " + getIsbn() + " title: " + getTitle() + " author: " + getAuthor() + " year: " + getYear());
-    }
 }
